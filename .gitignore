@@ -1,0 +1,6 @@
+/_inputs/
+/node_modules/
+/bower_components/
+/.vscode/
+/.sass-cache/
+*gdbase.js
