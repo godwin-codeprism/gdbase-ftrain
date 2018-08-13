@@ -11,12 +11,12 @@ angular.module('gdbaseFtrain')
             module4: null,
             module5: null
         };
-        $http.get('./database/modules.json')
+        $http.get(baseURL + 'database/modules.json')
             .then(function (res) {
                 $scope.modules = res.data;
                 $scope.activeModule = $scope.modules[0];
             });
-        $http.post('./server/get-user-data.php', localStorage.getItem("gdbaseToken").split("|")[0])
+        $http.post(baseURL + 'server/get-user-data.php', localStorage.getItem("gdbaseToken").split("|")[0])
             .then(function (res) {
                 if (res.data.ftrain) {
                     $scope.startTime = JSON.parse(res.data.ftrain);
@@ -30,7 +30,7 @@ angular.module('gdbaseFtrain')
                         module4: today.setHours(today.getHours() + 24),
                         module5: today.setHours(today.getHours() + 24)
                     };
-                    $http.post('./server/update-ftrain.php', {
+                    $http.post(baseURL + 'server/update-ftrain.php', {
                         username: localStorage.getItem("gdbaseToken").split("|")[0],
                         ftrain: $scope.startTime
                     }).then(function (res) {

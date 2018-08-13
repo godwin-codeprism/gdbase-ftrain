@@ -17,10 +17,10 @@ angular.module("gdbaseFtrain")
         username: $scope.username,
         password: $scope.password
       };
-      $http.post(baseURL + "./server/signup.php", signupData)
+      $http.post(baseURL + "server/signup.php", signupData)
         .then(function (response) {
           if (response.data.signUp) {
-            $http.post(baseURL + "./server/send-activation-mail.php", {
+            $http.post(baseURL + "server/send-activation-mail.php", {
                 "firstname": $scope.firstName,
                 "email": $scope.email,
                 "activationCode": response.data.activationCode
@@ -54,7 +54,7 @@ angular.module("gdbaseFtrain")
         });
     };
     $scope.validateUsername = function () {
-      $http.post(baseURL + "./server/username-avalibility.php", $scope.username)
+      $http.post(baseURL + "server/username-avalibility.php", $scope.username)
         .then(function (response) {
           $scope.isUnique = response.data.trim();
         })
@@ -68,7 +68,7 @@ angular.module("gdbaseFtrain")
       }
     };
     $scope.validateEmail = function () {
-      $http.post(baseURL + "./server/email-avalibility.php", $scope.email)
+      $http.post(baseURL + "server/email-avalibility.php", $scope.email)
         .then(function (response) {
           $scope.isUniqueEmail = response.data.trim();
         })
