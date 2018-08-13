@@ -1,6 +1,6 @@
 if (location.origin == "https://www.gdbase.be") {
     // production
-    window.baseURL = "https://www.gdbase.be/free-training/";
+    window.baseURL = "https://www.gdbase.be/ftrain/";
     window.$ = jQuery;
 } else {
     // development
