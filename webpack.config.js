@@ -7,7 +7,7 @@ var CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 module.exports = {
     entry:"./scripts/imports.js",
     output: {
-        filename: "godwin.js",
+        filename: "ftrain.js",
     },
     devServer: {
         contentBase: './',

@@ -1,0 +1,194 @@
+.dasboard-container {
+  padding: 15px;
+}
+.dasboard-container .btn-module-container {
+  padding: 10px 0px;
+}
+.dasboard-container .btn-module {
+  background-color: whitesmoke;
+  text-transform: none;
+  white-space: normal;
+  border-top: 5px solid #4a3e37;
+}
+.dasboard-container .btn-module h4 {
+  margin: 0px !important;
+  color: #4a3e37 !important;
+}
+.dasboard-container .btn-module:hover, .dasboard-container .btn-module:active, .dasboard-container .btn-module:focus {
+  color: #4a3e37;
+}
+.dasboard-container .btn-module .title {
+  min-height: 60px;
+  padding-top: 4px;
+  color: #4a3e37;
+}
+.dasboard-container .btn-module.selected {
+  border-top: 5px solid #FF6600;
+  color: #FF6600;
+}
+.dasboard-container .btn-module.selected h4 {
+  color: #FF6600 !important;
+}
+.dasboard-container .btn-module.selected .title {
+  color: #FF6600;
+}
+.dasboard-container .thumbnails-container {
+  min-height: 500px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+.dasboard-container .thumbnails-container .title-bar {
+  width: 100%;
+  height: 45px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #4a3e37;
+  color: white;
+  line-height: 45px;
+  padding: 0px 15px;
+}
+.dasboard-container .thumbnails-container .thumbnail {
+  cursor: pointer;
+  margin-top: 10px;
+  transition: box-shadow 0.35s ease-in-out;
+}
+.dasboard-container .thumbnails-container .thumbnail .img {
+  width: 100%;
+  overflow: hidden;
+  height: 132px;
+  border: 1px inset rgba(68, 68, 79, 0.2);
+  position: relative;
+}
+.dasboard-container .thumbnails-container .thumbnail .img img {
+  margin-top: -23px;
+  width: 100%;
+}
+.dasboard-container .thumbnails-container .thumbnail .img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/assets/images/yt_black.png");
+  background-position: center;
+  background-size: 20%;
+  opacity: 0.85;
+  background-repeat: no-repeat;
+  transition: background-image 0.25s ease-in-out;
+}
+.dasboard-container .thumbnails-container .thumbnail .title {
+  min-height: 45px;
+  text-align: center !important;
+  line-height: 1em;
+  padding: 10px;
+}
+.dasboard-container .thumbnails-container .thumbnail:hover {
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+.dasboard-container .thumbnails-container .thumbnail:hover .overlay {
+  background-image: url("../assets/images/yt_red.png");
+}
+.dasboard-container .footer {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  bottom: 0;
+  line-height: 50px;
+  background-color: #4a3e37;
+  border-top: 5px solid #FF6600;
+  padding: 0px 15px;
+}
+.dasboard-container .footer p {
+  display: inline;
+  color: white;
+}
+.dasboard-container .footer .btn {
+  margin: 10px 35px 0px 0px;
+}
+
+.offer-container {
+  min-height: 500px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+.offer-container .title-bar {
+  width: 100%;
+  height: 45px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #4a3e37;
+  color: white;
+  line-height: 45px;
+  padding: 0px 15px;
+}
+.offer-container .video {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  margin-top: 55px;
+}
+.offer-container .panel {
+  margin-top: 10px;
+}
+.offer-container .panel-heading .badge {
+  font-size: large;
+  float: right;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: bolder;
+}
+.offer-container .panel-body {
+  padding-left: 25px;
+}
+.offer-container .panel-body li {
+  line-height: 1.3;
+  font-size: small;
+  margin-bottom: 5px;
+}
+.offer-container .footer {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  bottom: 0;
+  line-height: 50px;
+  background-color: #4a3e37;
+  border-top: 5px solid #FF6600;
+  padding: 0px 15px;
+}
+.offer-container .footer p {
+  display: inline;
+  color: white;
+}
+.offer-container .footer .btn {
+  margin: 10px 35px 0px 0px;
+}
+
+.player-container {
+  min-height: 500px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+.player-container .title-bar {
+  width: 100%;
+  height: 45px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #4a3e37;
+  color: white;
+  line-height: 45px;
+  padding: 0px 15px;
+}
+.player-container .video {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/*# sourceMappingURL=dashboard.css.map */

@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="hidde-xs hidden-sm col-md-1 col-lg-1"></div>
+    <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+        <div class="thumbnails-container elevation-3">
+            <div class="title-bar">
+                <b>Module {{activeModule.module}}:</b> {{activeModule.title}} | {{activeModule.subTitle}}
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3" ng-repeat="video in activeModule.videos" ng-click="openPlayer($index)">
+                        <div class="thumbnail elevation-2">
+                            <div class="img">
+                                <div class="overlay"></div>
+                                <img ng-src="{{'https://img.youtube.com/vi/'+video.key+'/0.jpg'}}" alt="img" class="img-responsive">
+                            </div>
+                            <div class="title">
+                                <small ng-bind-html="video.title"></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidde-xs hidden-sm col-md-1 col-lg-1"></div>
+</div>
+<div class="footer">
+    <p>Offre exceptionnelle « Diplôme de gestion de base GARANTI » : encore valable 3j, 20h, 34min, 15s</p>
+    <a ui-sref="dashboard.offer" class="btn btn-primary btn-sm pull-right">
+        En savoir plus
+    </a>
+</div>

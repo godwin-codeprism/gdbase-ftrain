@@ -2,7 +2,7 @@
   "name": "gdbase-ftrain",
   "version": "1.0.0",
   "description": "\"Free training modules for gdbase.be\"",
-  "main": "godwin.js",
+  "main": "ftrain.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/godwinvc/gdbase-ftrain#readme",
   "dependencies": {
-    "angular": "^1.6.8",
+    "angular": "1.6.8",
     "bootstrap": "^4.0.0",
     "jquery": "^3.3.1",
     "angular-animate": "1.6.3",

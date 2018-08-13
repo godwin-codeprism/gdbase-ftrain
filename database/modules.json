@@ -1,0 +1,139 @@
+[{
+        "module": 1,
+        "title": "Tout savoir pour avoir votre diplôme de gestion de base",
+        "subTitle": "Réponse à toutes les questions que vous vous posez",
+        "disbale": false,
+        "videos": [{
+                "key": "6AeT60hFy_A",
+                "title": "L’examen est-il facile ?"
+            },
+            {
+                "key": "JMduaZKhxy8",
+                "title": "Comment se passe l’examen ?"
+            },
+            {
+                "key": "BDUV7C9vK6U",
+                "title": "Quelles sont les matières à connaître ?"
+            },
+            {
+                "key": "2xV9v2N79V4",
+                "title": "Est-ce nécessaire de suivre une formation ?"
+            },
+            {
+                "key": "CF8bIsgD0l8",
+                "title": "Faut-il être bon en math pour réussir l’examen ?"
+            },
+            {
+                "key": "TZTKXCSpFxU",
+                "title": "Que se passe-t-il si je rate l’examen ?"
+            },
+            {
+                "key": "",
+                "title": "Comment puis-je être certain de réussir ?"
+            },
+            {
+                "key": "",
+                "title": "Témoignages d’étudiants"
+            }
+        ]
+    },
+    {
+        "module": 2,
+        "title": "Exercices d’examen",
+        "subTitle": "Voici des exercices habituels d’examens expliqués en vidéo",
+        "disbale": true,
+        "videos": [{
+                "key": "z5Kyg4NADN4",
+                "title": "<b>Exercice du chapitre 1</b><br/>L’entrepreneuriat"
+            },
+            {
+                "key": "jwxi4231ans",
+                "title": "<b>Exercice du chapitre 2</b><br/>La création d’entreprise"
+            },
+            {
+                "key": "TZky9AyNDm4",
+                "title": "<b>Exercice du chapitre 3</b><br/>La comptabilité"
+            },
+            {
+                "key": "UpVR9np-sXA",
+                "title": "<b>Exercice du chapitre 4</b><br/> La TVA"
+            },
+            {
+                "key": "1inxtOh4nJY",
+                "title": "<b>Exercice du chapitre 5</b><br/> La fiscalité"
+            },
+            {
+                "key": "rybs3daWMs8",
+                "title": "<b>Exercice du chapitre 6</b><br/> La politique commerciale"
+            },
+            {
+                "key": "P7oYGfc46K4",
+                "title": "<b>Exercice du chapitre 7</b><br/> La législation"
+            },
+            {
+                "key": "R3cvxYd_0ew",
+                "title": "<b>Autres exercices</b>"
+            }
+        ]
+    },
+    {
+        "module": 3,
+        "title": "Comment se passe l’examen?",
+        "subTitle": "Voici les conditions dans lesquelles se passent l’examen et le types de questions qui y sont posées",
+        "disbale": true,
+        "videos": [{
+                "key": "",
+                "title": "Conditions d’examen "
+            },
+            {
+                "key": "",
+                "title": "Types de questions posées à l’examen"
+            },
+            {
+                "key": "",
+                "title": "Points positifs et négatifs"
+            },
+            {
+                "key": "",
+                "title": "Stratégie d’examen"
+            }
+        ]
+    },
+    {
+        "module": 4,
+        "title": "Simulation d’examen",
+        "subTitle": "Passez un examen blanc pour vérifier que vous êtes prêts à passer l’examen",
+        "disbale": true,
+        "videos": [{
+            "key": "",
+            "title": "Explication de la simulation"
+        }]
+    },
+    {
+        "module": 5,
+        "title": "Conseils des étudiants qui ont réussi",
+        "subTitle": "Nos étudiants qui ont réussi l’examen vous donnent leurs conseils",
+        "disbale": true,
+        "videos": [{
+                "key": "",
+                "title": "Interview de XXX"
+            },
+            {
+                "key": "",
+                "title": "Interview de XXX"
+            },
+            {
+                "key": "",
+                "title": "Interview de XXX"
+            },
+            {
+                "key": "",
+                "title": "Interview de XXX"
+            },
+            {
+                "key":"",
+                "title":"Vidéo de clôture (direction)"
+            }
+        ]
+    }
+]
