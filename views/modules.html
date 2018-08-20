@@ -19,14 +19,21 @@
                         </div>
                     </div>
                 </div>
+                <div class="row" style="padding-bottom: 15px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
+                        <a href="{{btn.link}}"target="_blank" ng-repeat="btn in activeModule.buttons">
+                            <button class="btn btn-primary">{{btn.title}}</button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="hidde-xs hidden-sm col-md-1 col-lg-1"></div>
 </div>
 <div class="footer">
-    <p>Offre exceptionnelle « Diplôme de gestion de base GARANTI » : encore valable 3j, 20h, 34min, 15s</p>
-    <a ui-sref="dashboard.offer" class="btn btn-primary btn-sm pull-right">
+    <p class="blink">Offre exceptionnelle « Diplôme de gestion de base GARANTI » : encore valable 3j, 20h, 34min, 15s</p>
+    <a ui-sref="dashboard.offer" class="btn btn-primary btn-sm">
         En savoir plus
     </a>
 </div>

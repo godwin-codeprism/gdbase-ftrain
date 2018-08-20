@@ -2,22 +2,18 @@
         "module": 1,
         "title": "Tout savoir pour avoir votre diplôme de gestion de base",
         "subTitle": "Réponse à toutes les questions que vous vous posez",
-        "disbale": false,
+        "disable": false,
         "videos": [{
-                "key": "6AeT60hFy_A",
-                "title": "L’examen est-il facile ?"
+                "key": "q8szNup59DM",
+                "title": "Comment se passe la formation gratuite ?"
             },
             {
                 "key": "JMduaZKhxy8",
-                "title": "Comment se passe l’examen ?"
+                "title": "L’examen est-il facile ?"
             },
             {
                 "key": "BDUV7C9vK6U",
-                "title": "Quelles sont les matières à connaître ?"
-            },
-            {
-                "key": "2xV9v2N79V4",
-                "title": "Est-ce nécessaire de suivre une formation ?"
+                "title": "Comment se passe l’examen ?"
             },
             {
                 "key": "CF8bIsgD0l8",
@@ -26,22 +22,15 @@
             {
                 "key": "TZTKXCSpFxU",
                 "title": "Que se passe-t-il si je rate l’examen ?"
-            },
-            {
-                "key": "",
-                "title": "Comment puis-je être certain de réussir ?"
-            },
-            {
-                "key": "",
-                "title": "Témoignages d’étudiants"
             }
-        ]
+        ],
+        "buttons": []
     },
     {
         "module": 2,
         "title": "Exercices d’examen",
         "subTitle": "Voici des exercices habituels d’examens expliqués en vidéo",
-        "disbale": true,
+        "disable": true,
         "videos": [{
                 "key": "z5Kyg4NADN4",
                 "title": "<b>Exercice du chapitre 1</b><br/>L’entrepreneuriat"
@@ -74,66 +63,71 @@
                 "key": "R3cvxYd_0ew",
                 "title": "<b>Autres exercices</b>"
             }
-        ]
+        ],
+        "buttons": [{
+            "title": "Avoir 50 questions de plus",
+            "link": "https://gdbase.be"
+        }]
     },
     {
         "module": 3,
         "title": "Comment se passe l’examen?",
         "subTitle": "Voici les conditions dans lesquelles se passent l’examen et le types de questions qui y sont posées",
-        "disbale": true,
+        "disable": true,
         "videos": [{
-                "key": "",
+                "key": "NKUarQuFAQc",
                 "title": "Conditions d’examen "
             },
             {
-                "key": "",
-                "title": "Types de questions posées à l’examen"
+                "key": "10ejSPa9t18",
+                "title": "3 types de questions et points positifs et négatifs"
             },
             {
-                "key": "",
-                "title": "Points positifs et négatifs"
-            },
-            {
-                "key": "",
+                "key": "zcLBleIzgLE",
                 "title": "Stratégie d’examen"
             }
-        ]
+        ],
+        "buttons": [{
+            "title": "Avoir la stratégie d’examen",
+            "link": "https://gdbase.be"
+        }]
     },
     {
         "module": 4,
         "title": "Simulation d’examen",
         "subTitle": "Passez un examen blanc pour vérifier que vous êtes prêts à passer l’examen",
-        "disbale": true,
+        "disable": true,
         "videos": [{
-            "key": "",
+            "key": "lIFtT51WB60",
             "title": "Explication de la simulation"
+        }],
+        "buttons": [{
+            "title": "Aller aux simulations",
+            "link": "https://gdbase.be"
         }]
     },
     {
         "module": 5,
         "title": "Conseils des étudiants qui ont réussi",
         "subTitle": "Nos étudiants qui ont réussi l’examen vous donnent leurs conseils",
-        "disbale": true,
+        "disable": true,
         "videos": [{
-                "key": "",
-                "title": "Interview de XXX"
+                "key": "fFpLVi2iHlg",
+                "title": "Conseils de nos étudiants"
             },
             {
-                "key": "",
-                "title": "Interview de XXX"
+                "key": "BYXMd6EscA4",
+                "title": "Témoignage de Christophe"
             },
             {
-                "key": "",
-                "title": "Interview de XXX"
-            },
-            {
-                "key": "",
-                "title": "Interview de XXX"
-            },
-            {
-                "key":"",
-                "title":"Vidéo de clôture (direction)"
+                "key": "pnatv_w6pFI",
+                "title": "A bientôt"
             }
-        ]
+
+        ],
+        "buttons": [{
+            "title": "Plus d’aide",
+            "link": "https://gdbase.be"
+        }]
     }
 ]

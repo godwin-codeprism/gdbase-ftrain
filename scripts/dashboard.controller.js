@@ -3,6 +3,7 @@ angular.module('gdbaseFtrain')
         var Timeloop = null;
         $scope.modules = [];
         $scope.activeModule = null;
+        $scope.userData = null;
         $scope.currentTimes = [];
         $scope.startTime = {
             module1: null,
@@ -11,6 +12,8 @@ angular.module('gdbaseFtrain')
             module4: null,
             module5: null
         };
+        $scope.question = '';
+        $scope.enableQuesSend = true;
         $http.get(baseURL + 'database/modules.json')
             .then(function (res) {
                 $scope.modules = res.data;
@@ -18,6 +21,7 @@ angular.module('gdbaseFtrain')
             });
         $http.post(baseURL + 'server/get-user-data.php', localStorage.getItem("gdbaseToken").split("|")[0])
             .then(function (res) {
+                $scope.userData = res.data;
                 if (res.data.ftrain) {
                     $scope.startTime = JSON.parse(res.data.ftrain);
                     StartTimer();
@@ -50,6 +54,27 @@ angular.module('gdbaseFtrain')
                 videokey: $scope.activeModule.videos[num].key,
                 videoData: $scope.activeModule.videos[num]
             })
+        }
+        $scope.onQuestionTyped = function () {
+            $scope.enableQuesSend = $scope.question == "";
+        }
+        $scope.sendQuestion = function () {
+            var data = $scope.userData;
+            data.question = $scope.question;
+            $scope.enableQuesSend = true;
+            $http.post(baseURL + 'server/send-qes-mail.php', data)
+                .then(function (res) {
+                    if (res.data == "MailDelivered") {
+                        alert('Question envoyée avec succès.');
+                    } else {
+                        alert("Une erreur s'est produite. Veuillez réessayer");
+                    }
+                    $scope.enableQuesSend = false;
+                })
+                .catch(function (err) {
+                    console.log(err);
+                    alert("Une erreur s'est produite. Veuillez réessayer");
+                })
         }
 
         function StartTimer() {

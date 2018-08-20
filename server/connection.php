@@ -1,4 +1,5 @@
 <?php
+// $db = new PDO("mysql:host=localhost;dbname=gdbaqsej_users;port:3306","gdbaqsej_godwinvc","KingKiller_22");
 $db = new PDO("mysql:host=localhost;dbname=gdbaqsej_users;port:3306","root","");
 
 // try {

@@ -5,8 +5,6 @@ angular.module('gdbaseFtrain')
         $scope.trustSrc = function (src) {
             return $sce.trustAsResourceUrl(src);
         }
-        $scope.video = 
-
         $http.get('./database/modules.json')
             .then(function (res) {
                 $scope.CurrentModule = res.data.find(function(i){

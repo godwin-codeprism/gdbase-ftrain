@@ -1,5 +1,5 @@
 .dasboard-container {
-    padding: 15px;
+    padding: 75px 15px;
     .btn-module-container {
         padding: 10px 0px;
     }
@@ -34,7 +34,6 @@
         }
     }
     .thumbnails-container {
-        min-height: 500px;
         background-color: whitesmoke;
         border-radius: 5px;
         margin-bottom: 50px;
@@ -105,9 +104,26 @@
             color: white;
         }
         .btn {
-            margin: 10px 35px 0px 0px;
+            margin-left: 20px;
         }
     }
+}
+
+.mybar {
+    background-color: #FF6600;
+    margin: auto;
+    padding: 15px 30px;
+    color: white;
+    width: fit-content;
+    text-align: center;
+    border-top-left-radius: 55px;
+    border-bottom-left-radius: 55px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 500;
+    top: 5px;
+    right: 0;
 }
 
 .offer-container {
@@ -166,7 +182,7 @@
             color: white;
         }
         .btn {
-            margin: 10px 35px 0px 0px;
+            margin-left: 20px;
         }
     }
 }
@@ -192,5 +208,41 @@
         background-color: white;
         margin-top: 10px;
         margin-bottom: 15px;
+    }
+}
+
+.askQuesContainer {
+    position: absolute;
+    width: 90%;
+    background-color: #4a3e37;
+    left: 0;
+    bottom: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 1px -1px 4px rgba(0, 0, 0, 0.4);
+    input[type=text] {
+        margin-top: 7px;
+    }
+    button {
+        margin-top: 10px;
+    }
+}
+
+.blink {
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
     }
 }
