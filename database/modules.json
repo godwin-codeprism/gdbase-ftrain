@@ -1,133 +1,147 @@
-[{
-        "module": 1,
-        "title": "Tout savoir pour avoir votre diplôme de gestion de base",
-        "subTitle": "Réponse à toutes les questions que vous vous posez",
-        "disable": false,
-        "videos": [{
-                "key": "q8szNup59DM",
-                "title": "Comment se passe la formation gratuite ?"
-            },
-            {
-                "key": "JMduaZKhxy8",
-                "title": "L’examen est-il facile ?"
-            },
-            {
-                "key": "BDUV7C9vK6U",
-                "title": "Comment se passe l’examen ?"
-            },
-            {
-                "key": "CF8bIsgD0l8",
-                "title": "Faut-il être bon en math pour réussir l’examen ?"
-            },
-            {
-                "key": "TZTKXCSpFxU",
-                "title": "Que se passe-t-il si je rate l’examen ?"
-            }
-        ],
-        "buttons": []
-    },
-    {
-        "module": 2,
-        "title": "Exercices d’examen",
-        "subTitle": "Voici des exercices habituels d’examens expliqués en vidéo",
-        "disable": true,
-        "videos": [{
-                "key": "z5Kyg4NADN4",
-                "title": "<b>Exercice du chapitre 1</b><br/>L’entrepreneuriat"
-            },
-            {
-                "key": "jwxi4231ans",
-                "title": "<b>Exercice du chapitre 2</b><br/>La création d’entreprise"
-            },
-            {
-                "key": "TZky9AyNDm4",
-                "title": "<b>Exercice du chapitre 3</b><br/>La comptabilité"
-            },
-            {
-                "key": "UpVR9np-sXA",
-                "title": "<b>Exercice du chapitre 4</b><br/> La TVA"
-            },
-            {
-                "key": "1inxtOh4nJY",
-                "title": "<b>Exercice du chapitre 5</b><br/> La fiscalité"
-            },
-            {
-                "key": "rybs3daWMs8",
-                "title": "<b>Exercice du chapitre 6</b><br/> La politique commerciale"
-            },
-            {
-                "key": "P7oYGfc46K4",
-                "title": "<b>Exercice du chapitre 7</b><br/> La législation"
-            },
-            {
-                "key": "R3cvxYd_0ew",
-                "title": "<b>Autres exercices</b>"
-            }
-        ],
-        "buttons": [{
-            "title": "Avoir 50 questions de plus",
-            "link": "https://gdbase.be"
-        }]
-    },
-    {
-        "module": 3,
-        "title": "Comment se passe l’examen?",
-        "subTitle": "Voici les conditions dans lesquelles se passent l’examen et le types de questions qui y sont posées",
-        "disable": true,
-        "videos": [{
-                "key": "NKUarQuFAQc",
-                "title": "Conditions d’examen "
-            },
-            {
-                "key": "10ejSPa9t18",
-                "title": "3 types de questions et points positifs et négatifs"
-            },
-            {
-                "key": "zcLBleIzgLE",
-                "title": "Stratégie d’examen"
-            }
-        ],
-        "buttons": [{
-            "title": "Avoir la stratégie d’examen",
-            "link": "https://gdbase.be"
-        }]
-    },
-    {
-        "module": 4,
-        "title": "Simulation d’examen",
-        "subTitle": "Passez un examen blanc pour vérifier que vous êtes prêts à passer l’examen",
-        "disable": true,
-        "videos": [{
-            "key": "lIFtT51WB60",
-            "title": "Explication de la simulation"
-        }],
-        "buttons": [{
-            "title": "Aller aux simulations",
-            "link": "https://gdbase.be"
-        }]
-    },
-    {
-        "module": 5,
-        "title": "Conseils des étudiants qui ont réussi",
-        "subTitle": "Nos étudiants qui ont réussi l’examen vous donnent leurs conseils",
-        "disable": true,
-        "videos": [{
-                "key": "fFpLVi2iHlg",
-                "title": "Conseils de nos étudiants"
-            },
-            {
-                "key": "BYXMd6EscA4",
-                "title": "Témoignage de Christophe"
-            },
-            {
-                "key": "pnatv_w6pFI",
-                "title": "A bientôt"
-            }
+{
+    "modules": [{
+            "module": 1,
+            "title": "Tout savoir pour avoir votre diplôme de gestion de base",
+            "subTitle": "Réponse à toutes les questions que vous vous posez",
+            "disable": false,
+            "videos": [{
+                    "key": "q8szNup59DM",
+                    "title": "Comment se passe la formation gratuite ?"
+                },
+                {
+                    "key": "JMduaZKhxy8",
+                    "title": "L’examen est-il facile ?"
+                },
+                {
+                    "key": "BDUV7C9vK6U",
+                    "title": "Comment se passe l’examen ?"
+                },
+                {
+                    "key": "CF8bIsgD0l8",
+                    "title": "Faut-il être bon en math pour réussir l’examen ?"
+                },
+                {
+                    "key": "TZTKXCSpFxU",
+                    "title": "Que se passe-t-il si je rate l’examen ?"
+                }
+            ],
+            "buttons": []
+        },
+        {
+            "module": 2,
+            "title": "Exercices d’examen",
+            "subTitle": "Voici des exercices habituels d’examens expliqués en vidéo",
+            "disable": true,
+            "videos": [{
+                    "key": "z5Kyg4NADN4",
+                    "title": "<b>Exercice du chapitre 1</b><br/>L’entrepreneuriat"
+                },
+                {
+                    "key": "jwxi4231ans",
+                    "title": "<b>Exercice du chapitre 2</b><br/>La création d’entreprise"
+                },
+                {
+                    "key": "TZky9AyNDm4",
+                    "title": "<b>Exercice du chapitre 3</b><br/>La comptabilité"
+                },
+                {
+                    "key": "UpVR9np-sXA",
+                    "title": "<b>Exercice du chapitre 4</b><br/> La TVA"
+                },
+                {
+                    "key": "1inxtOh4nJY",
+                    "title": "<b>Exercice du chapitre 5</b><br/> La fiscalité"
+                },
+                {
+                    "key": "rybs3daWMs8",
+                    "title": "<b>Exercice du chapitre 6</b><br/> La politique commerciale"
+                },
+                {
+                    "key": "P7oYGfc46K4",
+                    "title": "<b>Exercice du chapitre 7</b><br/> La législation"
+                },
+                {
+                    "key": "R3cvxYd_0ew",
+                    "title": "<b>Autres exercices</b>"
+                }
+            ],
+            "buttons": [{
+                "title": "Avoir 50 questions de plus",
+                "link": "https://gdbase.be"
+            }]
+        },
+        {
+            "module": 3,
+            "title": "Comment se passe l’examen?",
+            "subTitle": "Voici les conditions dans lesquelles se passent l’examen et le types de questions qui y sont posées",
+            "disable": true,
+            "videos": [{
+                    "key": "NKUarQuFAQc",
+                    "title": "Conditions d’examen "
+                },
+                {
+                    "key": "10ejSPa9t18",
+                    "title": "3 types de questions et points positifs et négatifs"
+                },
+                {
+                    "key": "zcLBleIzgLE",
+                    "title": "Stratégie d’examen"
+                }
+            ],
+            "buttons": [{
+                "title": "Avoir la stratégie d’examen",
+                "link": "https://gdbase.be"
+            }]
+        },
+        {
+            "module": 4,
+            "title": "Simulation d’examen",
+            "subTitle": "Passez un examen blanc pour vérifier que vous êtes prêts à passer l’examen",
+            "disable": true,
+            "videos": [{
+                "key": "lIFtT51WB60",
+                "title": "Explication de la simulation"
+            }],
+            "buttons": [{
+                "title": "Aller aux simulations",
+                "link": "https://gdbase.be"
+            }]
+        },
+        {
+            "module": 5,
+            "title": "Conseils des étudiants qui ont réussi",
+            "subTitle": "Nos étudiants qui ont réussi l’examen vous donnent leurs conseils",
+            "disable": true,
+            "videos": [{
+                    "key": "fFpLVi2iHlg",
+                    "title": "Conseils de nos étudiants"
+                },
+                {
+                    "key": "BYXMd6EscA4",
+                    "title": "Témoignage de Christophe"
+                },
+                {
+                    "key": "pnatv_w6pFI",
+                    "title": "A bientôt"
+                }
 
+            ],
+            "buttons": [{
+                "title": "Plus d’aide",
+                "link": "https://gdbase.be"
+            }]
+        }
+    ],
+    "offer": {
+        "sets": ["<ul><li>Syllabus en version papier (valeur totale : 150€) Cours en groupe à volonté (valeur : 1.000€)</li><li>Cours en vidéo à volonté (valeur : 150€) 100 exercices d’examen en vidéo (valeur : 150€)</li><li>2 heures de cours particuliers (valeur : 120€) 6 simulations d’examen (valeur : 150€) Inscription</li><li>en priorité à l’examen (valeur : 120€) Conseils d’étudiants qui ont réussi l’examen (valeur:160€)</li></ul><h3 class=\"text-center\">Valeur totale : 2000€</h3><hr>",
+            "<ul><li>garantie 1 : vous ne payez que si vous réussissez votre examen (valeur inestimable</li><li>garantie 2 : vous aurez une date d’examen dans maximum 4 semaines (valeur inestimable)</li><li>garantie 3 : vous aurez votre</li><li>diplôme de gestion de base dans 4 mois maximum (valeur inestimable)</li></ul><h2 class=\"text-primary text-center\">Réduction à 1000€</h2>"
         ],
-        "buttons": [{
-            "title": "Plus d’aide",
-            "link": "https://gdbase.be"
-        }]
+        "video": {
+            "key": "ZzJ3JrUiggg",
+            "title": ""
+        },
+        "offerLable": "Plus que 03J, 20h, 04min, 15sec pour",
+        "offerButtonText": "Profiter de cette offre",
+        "offerLink": "https://gdbase.be"
     }
-]
+}

@@ -35,7 +35,7 @@
 .dasboard-container .thumbnails-container {
   background-color: whitesmoke;
   border-radius: 5px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .dasboard-container .thumbnails-container .title-bar {
   width: 100%;
@@ -91,10 +91,10 @@
 .dasboard-container .footer {
   position: absolute;
   width: 100%;
-  height: 50px;
+  height: 60px;
   left: 0;
   bottom: 0;
-  line-height: 50px;
+  line-height: 60px;
   background-color: #4a3e37;
   border-top: 5px solid #FF6600;
   padding: 0px 15px;
@@ -102,9 +102,15 @@
 .dasboard-container .footer p {
   display: inline;
   color: white;
+  font-size: 21px;
+  font-weight: bolder;
 }
 .dasboard-container .footer .btn {
   margin-left: 20px;
+}
+.dasboard-container .call-to-btn {
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 .mybar {
@@ -128,7 +134,7 @@
   min-height: 500px;
   background-color: whitesmoke;
   border-radius: 5px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .offer-container .title-bar {
   width: 100%;
@@ -167,10 +173,10 @@
 .offer-container .footer {
   position: absolute;
   width: 100%;
-  height: 50px;
+  height: 60px;
   left: 0;
   bottom: 0;
-  line-height: 50px;
+  line-height: 60px;
   background-color: #4a3e37;
   border-top: 5px solid #FF6600;
   padding: 0px 15px;
@@ -178,6 +184,8 @@
 .offer-container .footer p {
   display: inline;
   color: white;
+  font-size: 21px;
+  font-weight: bolder;
 }
 .offer-container .footer .btn {
   margin-left: 20px;
@@ -187,7 +195,7 @@
   min-height: 500px;
   background-color: whitesmoke;
   border-radius: 5px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .player-container .title-bar {
   width: 100%;
@@ -212,9 +220,9 @@
   width: 90%;
   background-color: #4a3e37;
   left: 0;
-  bottom: 50px;
-  height: 50px;
-  line-height: 50px;
+  bottom: 60px;
+  height: 60px;
+  line-height: 60px;
   color: white;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;

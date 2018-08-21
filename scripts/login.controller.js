@@ -23,7 +23,7 @@ angular.module("gdbaseFtrain")
           if (location.pathname == "/client/") {
             window.open('https://www.gdbase.be/client/', '_self');
           } else {
-            $state.go('dashboard', {
+            $state.go('dashboard.modules', {
               user: $scope.username
             });
           }

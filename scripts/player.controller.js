@@ -7,7 +7,7 @@ angular.module('gdbaseFtrain')
         }
         $http.get('./database/modules.json')
             .then(function (res) {
-                $scope.CurrentModule = res.data.find(function(i){
+                $scope.CurrentModule = res.data.modules.find(function(i){
                     return i.videos.find(function(j){
                         return j.key === $scope.videokey;
                     })

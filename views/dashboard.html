@@ -1,6 +1,3 @@
-<div class="mybar">
-    Cours de gestion de base en 2 jours
-</div>
 <div class="container-fluid dasboard-container">
     <div class="row btn-module-container">
         <div class="hidde-xs hidden-sm col-md-1 col-lg-1"></div>
@@ -16,21 +13,4 @@
         <div class="hidde-xs hidden-sm col-md-1 col-lg-1"></div>
     </div>
     <ui-view></ui-view>
-
-    <div class="askQuesContainer">
-        <div class="container-fluid">
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 remove-padding">
-                Il vous reste une question ? Posez la ici :
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6">
-                <input type="text" name="question" id="askQues" class="form-control" ng-model='question' ng-change="onQuestionTyped()">
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                <button class="btn btn-primary btn-sm btn-block" ng-disabled="enableQuesSend" ng-click="sendQuestion()">
-                    Envoyer
-                </button>
-            </div>
-        </div>
-    </div>
-
 </div>

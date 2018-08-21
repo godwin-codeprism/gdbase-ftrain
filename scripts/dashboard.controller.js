@@ -1,5 +1,5 @@
 angular.module('gdbaseFtrain')
-    .controller('dashboardController', ['$scope', '$http', '$state', '$interval', function ($scope, $http, $state, $interval) {
+    .controller('dashboardController', ['$scope', '$http', '$state', '$interval','$sce', function ($scope, $http, $state, $interval, $sce) {
         var Timeloop = null;
         $scope.modules = [];
         $scope.activeModule = null;
@@ -14,10 +14,14 @@ angular.module('gdbaseFtrain')
         };
         $scope.question = '';
         $scope.enableQuesSend = true;
+        $scope.trustSrc = function (src) {
+            return $sce.trustAsResourceUrl(src);
+        }
         $http.get(baseURL + 'database/modules.json')
             .then(function (res) {
-                $scope.modules = res.data;
+                $scope.modules = res.data.modules;
                 $scope.activeModule = $scope.modules[0];
+                $scope.offerData = res.data.offer;
             });
         $http.post(baseURL + 'server/get-user-data.php', localStorage.getItem("gdbaseToken").split("|")[0])
             .then(function (res) {
