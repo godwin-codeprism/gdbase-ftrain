@@ -13,7 +13,7 @@ var runFunction = function ($transitions, authService, $state) {
                     )
                     .then(function (res) {
                         if (res != "good") {
-                            console.log("Token mismatch");
+                            console.log("Token mismatch", res);
                             localStorage.removeItem("gdbaseToken");
                             $state.go("login");
                         }
@@ -81,7 +81,7 @@ angular.module('gdbaseFtrain', ["ngSanitize", "ui.router"])
                 .state("dashboard.modules", {
                     url: '/modules',
                     templateUrl: baseURL + "views/modules.html?v=1.1",
-                    controller: "dashboardController"
+                    controller: "modulesController"
                 })
                 .state("dashboard.offer",{
                     url:'/offre',

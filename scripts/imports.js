@@ -31,6 +31,7 @@ require('../css/globals.css');
 require('../scripts/config');
 require('../scripts/signup.controller');
 require('../scripts/login.controller');
+require('../scripts/modules.controller');
 require('../scripts/dashboard.controller');
 require('../scripts/player.controller');
 

@@ -12,8 +12,6 @@ angular.module('gdbaseFtrain')
             module4: null,
             module5: null
         };
-        $scope.question = '';
-        $scope.enableQuesSend = true;
         $scope.trustSrc = function (src) {
             return $sce.trustAsResourceUrl(src);
         }
@@ -58,27 +56,6 @@ angular.module('gdbaseFtrain')
                 videokey: $scope.activeModule.videos[num].key,
                 videoData: $scope.activeModule.videos[num]
             })
-        }
-        $scope.onQuestionTyped = function () {
-            $scope.enableQuesSend = $scope.question == "";
-        }
-        $scope.sendQuestion = function () {
-            var data = $scope.userData;
-            data.question = $scope.question;
-            $scope.enableQuesSend = true;
-            $http.post(baseURL + 'server/send-qes-mail.php', data)
-                .then(function (res) {
-                    if (res.data == "MailDelivered") {
-                        alert('Question envoyée avec succès.');
-                    } else {
-                        alert("Une erreur s'est produite. Veuillez réessayer");
-                    }
-                    $scope.enableQuesSend = false;
-                })
-                .catch(function (err) {
-                    console.log(err);
-                    alert("Une erreur s'est produite. Veuillez réessayer");
-                })
         }
 
         function StartTimer() {
