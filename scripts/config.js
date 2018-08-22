@@ -80,7 +80,8 @@ angular.module('gdbaseFtrain', ["ngSanitize", "ui.router"])
                 })
                 .state("dashboard.modules", {
                     url: '/modules',
-                    templateUrl: baseURL + "views/modules.html?v=1.1"
+                    templateUrl: baseURL + "views/modules.html?v=1.1",
+                    controller: "dashboardController"
                 })
                 .state("dashboard.offer",{
                     url:'/offre',
