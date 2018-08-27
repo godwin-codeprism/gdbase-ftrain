@@ -90,24 +90,44 @@
             }
         }
     }
-    .footer {
+    .footer-container {
         position: absolute;
-        width: 100%;
-        height: 60px;
         left: 0;
         bottom: 0;
-        line-height: 60px;
-        background-color: #4a3e37;
-        border-top: 5px solid #FF6600;
-        padding: 0px 15px;
-        p {
-            display: inline;
-            color: white;
-            font-size: 21px;
-            font-weight: bolder;
+        width: 100%;
+        .footer {
+            width: 100%;
+            line-height: 60px;
+            border-top: 5px solid #FF6600;
+            background-color: #4a3e37;
+            padding: 0px 15px;
+            p {
+                display: inline;
+                color: white;
+                font-size: 21px;
+                font-weight: bolder;
+            }
+            .btn {
+                margin-left: 20px;
+            }
         }
-        .btn {
-            margin-left: 20px;
+        .askQuesContainer {
+            width: 90%;
+            background-color: #4a3e37;
+            margin-left: 0px;
+            bottom: 60px;
+            height: 60px;
+            line-height: 60px;
+            color: white;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            box-shadow: 1px -1px 4px rgba(0, 0, 0, 0.4);
+            input[type=text] {
+                margin-top: 7px;
+            }
+            button {
+                margin-top: 10px;
+            }
         }
     }
     .call-to-btn {
@@ -133,45 +153,47 @@
     right: 0;
 }
 
-.offer-container {
-    min-height: 500px;
-    background-color: whitesmoke;
-    border-radius: 5px;
-    margin-bottom: 60px;
-    .title-bar {
-        width: 100%;
-        height: 45px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        background-color: #4a3e37;
-        color: white;
-        line-height: 45px;
-        padding: 0px 15px;
-    }
-    .video {
-        padding: 10px;
+.offer-view {
+    .offer-container {
+        min-height: 500px;
+        background-color: whitesmoke;
         border-radius: 5px;
-        background-color: white;
-        margin-top: 55px;
-    }
-    .panel {
-        margin-top: 10px
-    }
-    .panel-heading {
-        .badge {
-            font-size: large;
-            float: right;
-            padding: 8px 20px;
-            border-radius: 25px;
-            font-weight: bolder;
+        margin-bottom: 60px;
+        .title-bar {
+            width: 100%;
+            height: 45px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            background-color: #4a3e37;
+            color: white;
+            line-height: 45px;
+            padding: 0px 15px;
         }
-    }
-    .panel-body {
-        padding-left: 25px;
-        li {
-            line-height: 1.3;
-            font-size: small;
-            margin-bottom: 5px;
+        .video {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: white;
+            margin-top: 55px;
+        }
+        .panel {
+            margin-top: 10px
+        }
+        .panel-heading {
+            .badge {
+                font-size: large;
+                float: right;
+                padding: 8px 20px;
+                border-radius: 25px;
+                font-weight: bolder;
+            }
+        }
+        .panel-body {
+            padding-left: 25px;
+            li {
+                line-height: 1.3;
+                font-size: small;
+                margin-bottom: 5px;
+            }
         }
     }
     .footer {
@@ -218,25 +240,15 @@
         margin-top: 10px;
         margin-bottom: 15px;
     }
-}
-
-.askQuesContainer {
-    position: absolute;
-    width: 90%;
-    background-color: #4a3e37;
-    left: 0;
-    bottom: 60px;
-    height: 60px;
-    line-height: 60px;
-    color: white;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    box-shadow: 1px -1px 4px rgba(0, 0, 0, 0.4);
-    input[type=text] {
-        margin-top: 7px;
-    }
-    button {
-        margin-top: 10px;
+    .player-controls{
+        table{
+            width: 100%;
+            margin-bottom: 15px !important;
+            td button{
+                min-width: 200px;
+                border-radius: 25px;
+            }
+        }        
     }
 }
 

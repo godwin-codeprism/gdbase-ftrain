@@ -1,5 +1,5 @@
 angular.module('gdbaseFtrain')
-    .controller('dashboardController', ['$scope', '$http', '$state', '$interval','$sce', function ($scope, $http, $state, $interval, $sce) {
+    .controller('dashboardController', ['$scope', '$http', '$state', '$interval', '$sce', function ($scope, $http, $state, $interval, $sce) {
         var Timeloop = null;
         $scope.modules = [];
         $scope.activeModule = null;
@@ -15,6 +15,7 @@ angular.module('gdbaseFtrain')
         $scope.trustSrc = function (src) {
             return $sce.trustAsResourceUrl(src);
         }
+        $scope.offerTime = null;
         $http.get(baseURL + 'database/modules.json')
             .then(function (res) {
                 $scope.modules = res.data.modules;
@@ -59,6 +60,8 @@ angular.module('gdbaseFtrain')
         }
 
         function StartTimer() {
+            var isNotExpired = checkOfferTime($scope.startTime.module1);
+            var tempTime = Date.now();
             Timeloop = $interval(function () {
                 var temp = [];
                 Object.keys($scope.startTime).forEach(function (item) {
@@ -73,11 +76,42 @@ angular.module('gdbaseFtrain')
                     if (distance < 0) {
                         temp.push('(disponible)');
                     } else {
-                        temp.push("(disponible dans " + days + "d " + hours + "h " + minutes + "m " + seconds + "s)");
+                        temp.push("(disponible dans " + days + "j " + hours + "h " + minutes + "m " + seconds + "s)");
                     }
                 });
+                if (isNotExpired) {
+                    $scope.offerTime = checkOfferTime($scope.startTime.module1);
+                } else {
+                    if (temp.every(function (v) {
+                            return v === temp[0]
+                        })) {
+                        stopTimer();
+                    }
+                }
                 $scope.currentTimes = temp;
             }, 1000);
+        }
+
+        function checkOfferTime(initTime) {
+            var init = new Date(initTime);
+            var addition = {
+                days: 3,
+                hours: 20,
+                mins: 35
+            }
+            init.setDate(init.getDate() + addition.days);
+            init.setHours(init.getHours() + addition.hours);
+            init.setMinutes(init.getMinutes() + addition.mins);
+            var distance = init.getTime() - Date.now();
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            if (distance < 0) {
+                return false;
+            } else {
+                return days + "j " + hours + "h " + minutes + "m " + seconds + "s";
+            }
         }
 
         function stopTimer() {

@@ -89,25 +89,45 @@
 .dasboard-container .thumbnails-container .thumbnail:hover .overlay {
   background-image: url("../images/yt_red.png");
 }
-.dasboard-container .footer {
+.dasboard-container .footer-container {
   position: absolute;
-  width: 100%;
-  height: 60px;
   left: 0;
   bottom: 0;
+  width: 100%;
+}
+.dasboard-container .footer-container .footer {
+  width: 100%;
   line-height: 60px;
-  background-color: #4a3e37;
   border-top: 5px solid #FF6600;
+  background-color: #4a3e37;
   padding: 0px 15px;
 }
-.dasboard-container .footer p {
+.dasboard-container .footer-container .footer p {
   display: inline;
   color: white;
   font-size: 21px;
   font-weight: bolder;
 }
-.dasboard-container .footer .btn {
+.dasboard-container .footer-container .footer .btn {
   margin-left: 20px;
+}
+.dasboard-container .footer-container .askQuesContainer {
+  width: 90%;
+  background-color: #4a3e37;
+  margin-left: 0px;
+  bottom: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: white;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 1px -1px 4px rgba(0, 0, 0, 0.4);
+}
+.dasboard-container .footer-container .askQuesContainer input[type=text] {
+  margin-top: 7px;
+}
+.dasboard-container .footer-container .askQuesContainer button {
+  margin-top: 10px;
 }
 .dasboard-container .call-to-btn {
   font-size: 20px;
@@ -131,13 +151,13 @@
   right: 0;
 }
 
-.offer-container {
+.offer-view .offer-container {
   min-height: 500px;
   background-color: whitesmoke;
   border-radius: 5px;
   margin-bottom: 60px;
 }
-.offer-container .title-bar {
+.offer-view .offer-container .title-bar {
   width: 100%;
   height: 45px;
   border-top-left-radius: 5px;
@@ -147,31 +167,31 @@
   line-height: 45px;
   padding: 0px 15px;
 }
-.offer-container .video {
+.offer-view .offer-container .video {
   padding: 10px;
   border-radius: 5px;
   background-color: white;
   margin-top: 55px;
 }
-.offer-container .panel {
+.offer-view .offer-container .panel {
   margin-top: 10px;
 }
-.offer-container .panel-heading .badge {
+.offer-view .offer-container .panel-heading .badge {
   font-size: large;
   float: right;
   padding: 8px 20px;
   border-radius: 25px;
   font-weight: bolder;
 }
-.offer-container .panel-body {
+.offer-view .offer-container .panel-body {
   padding-left: 25px;
 }
-.offer-container .panel-body li {
+.offer-view .offer-container .panel-body li {
   line-height: 1.3;
   font-size: small;
   margin-bottom: 5px;
 }
-.offer-container .footer {
+.offer-view .footer {
   position: absolute;
   width: 100%;
   height: 60px;
@@ -182,13 +202,13 @@
   border-top: 5px solid #FF6600;
   padding: 0px 15px;
 }
-.offer-container .footer p {
+.offer-view .footer p {
   display: inline;
   color: white;
   font-size: 21px;
   font-weight: bolder;
 }
-.offer-container .footer .btn {
+.offer-view .footer .btn {
   margin-left: 20px;
 }
 
@@ -215,25 +235,13 @@
   margin-top: 10px;
   margin-bottom: 15px;
 }
-
-.askQuesContainer {
-  position: absolute;
-  width: 90%;
-  background-color: #4a3e37;
-  left: 0;
-  bottom: 60px;
-  height: 60px;
-  line-height: 60px;
-  color: white;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  box-shadow: 1px -1px 4px rgba(0, 0, 0, 0.4);
+.player-container .player-controls table {
+  width: 100%;
+  margin-bottom: 15px !important;
 }
-.askQuesContainer input[type=text] {
-  margin-top: 7px;
-}
-.askQuesContainer button {
-  margin-top: 10px;
+.player-container .player-controls table td button {
+  min-width: 200px;
+  border-radius: 25px;
 }
 
 .blink {

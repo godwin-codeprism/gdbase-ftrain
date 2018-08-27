@@ -15,8 +15,8 @@ angular.module('gdbaseFtrain')
           .then(function (res) {
               if (res.data == "MailDelivered") {
                   alert('Question envoyée avec succès.');
+                  $scope.question = "";
               } else {
-                  console.log(res);
                   alert("Une erreur s'est produite. Veuillez réessayer");
               }
               $scope.enableQuesSend = false;
@@ -26,4 +26,4 @@ angular.module('gdbaseFtrain')
               alert("Une erreur s'est produite. Veuillez réessayer");
           })
     }
-  }])
+  }]);

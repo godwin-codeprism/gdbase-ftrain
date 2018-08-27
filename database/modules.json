@@ -133,13 +133,12 @@
         }
     ],
     "offer": {
-        "sets": ["<ul><li>Syllabus en version papier (valeur totale : 150€)</li><li>Cours en groupe à volonté (valeur : 1.000€)</li><li>Cours en vidéo à volonté (valeur : 150€)</li><li>100 exercices d’examen en vidéo (valeur : 150€)</li><li>2 heures de cours particuliers (valeur : 120€)</li><li>6 simulations d’examen (valeur : 150€)</li><li>Inscription en priorité à l’examen (valeur : 120€)</li><li>Conseils d’étudiants qui ont réussi l’examen (valeur : 160€)</li></ul><h3 class=\"text-center\">Valeur totale : 2000€</h3><hr>", "<ul><li>garantie 1 : vous ne payez que si vous réussissez votre examen</li><li>garantie 2 : vous aurez une date d’examen dans maximum 4 semaines</li><li>garantie 3 : vous aurez votre diplôme de gestion de base dans 4 mois maximum</li></ul><h2 class=\"text-primary text-center\" style=\"font-size:xx-large\">Réduction à 1000€</h2>"
+        "sets": ["<ul><li>Syllabus en version papier (valeur totale : 150€)</li><li>Cours en groupe à volonté (valeur : 1.000€)</li><li>Cours en vidéo à volonté (valeur : 150€)</li><li>100 exercices d’examen en vidéo (valeur : 150€)</li><li>2 heures de cours particuliers (valeur : 120€)</li><li>6 simulations d’examen (valeur : 150€)</li><li>Inscription en priorité à l’examen (valeur : 120€)</li><li>Conseils d’étudiants qui ont réussi l’examen (valeur : 160€)</li></ul><h3 class=\"text-center\">Valeur totale : 2000€</h3><hr>", "<ul><li>garantie 1 : vous ne payez que si vous réussissez votre examen</li><li>garantie 2 : vous aurez une date d’examen dans maximum 4 semaines</li><li>garantie 3 : vous aurez votre diplôme de gestion de base dans 4 mois maximum</li></ul><h2 class=\"text-primary text-center\" style=\"font-size:40px\">Réduction à 1000€</h2>"
         ],
         "video": {
             "key": "ZzJ3JrUiggg",
             "title": ""
         },
-        "offerLable": "Plus que 03J, 20h, 04min, 15sec pour",
         "offerButtonText": "Profiter de cette offre",
         "offerLink": "https://gdbase.be"
     }

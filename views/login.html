@@ -3,15 +3,13 @@
         <div class="bg-txt-ctnt col-md-7 col-sm-6 hidden-xs">
             <div class="txt-ctnr">
                 <h1>GDBase</h1>
-                <p>Simulation d’examen</p>
             </div>
         </div>
         <div class="fr-ctnr col-md-5 col-sm-6 col-xs-12">
             <div class="fr-ctnt">
                 <div class="fr-header text-center">
                     <p>S'identifier</p>
-                    <h5 style="font-weight:300; letter-spacing:1px; font-size:large; margin-top:0px;color:#66574e;">Pour accéder à la
-                        <b>simulation gratuite</b>
+                    <h5 style="font-weight:300; letter-spacing:1px; font-size:large; margin-top:0px;color:#66574e;">Pour accéder à la Formation Gratuite
                     </h5>
                     <hr id="fr-hr">
                 </div>
@@ -50,10 +48,10 @@
                             <button type="submit" class="btn btn-lg btn-primary submit" ng-click="loginHandler()">S'identifier</button>
                         </div>
                     </form>
-                    <p style="margin-top:25px; text-align:center;">
+                    <p style="margin-top:25px; text-align:center; line-height: 45px;">
                         <button class="forgot-pass" ng-click="forgotPassword()">Mot de passe oublié?</button>
                         <br>
-                        <span class="login-txt">
+                        <span class="signup-txt">
                             <a ui-sref="signup">Créer un nouveau compte</a>
                         </span>
                     </p>
@@ -90,8 +88,8 @@
                     </div>
                     <!-- Stage 2-->
                     <div style="width:95%;" ng-show="passResetStage == 4">
-                        <p>Nous venons de vous envoyer le OTP</p>
-                        <small>OPT expire dans 0{{passRestTimer.mins}}:{{passRestTimer.secs
+                        <p>Nous venons de vous envoyer un code sur <b>{{passEmail}}</b></p>
+                        <small>Ce code expire dans 0{{passRestTimer.mins}}:{{passRestTimer.secs
                             < 9? '0': null}}{{passRestTimer.secs}}</small>
                                 <div class="form-group" ng-show="OTPState != 'expired'">
                                     <input type="text" class="form-control" name="passOTP" placeholder="Entrez OTP" ng-model="passOTP">

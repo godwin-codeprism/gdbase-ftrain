@@ -56,7 +56,6 @@ angular.module("gdbaseFtrain")
                 $scope.passResetStage = 1;
                 var res = response.data.response;
                 resetData = response.data;
-                console.log(resetData);
                 if (res == 'addedToWordpress') {
                   $scope.passResetStage = 2;
 
@@ -100,7 +99,6 @@ angular.module("gdbaseFtrain")
       $http.post(baseURL + "server/send-password-reset-mail.php", data)
         .then(function (res) {
           $scope.passResetStage = 4;
-          console.log(res);
           startTimer();
           if (activation_code) {
             $http.post(baseURL + "server/send-activation-mail.php", data)
@@ -222,7 +220,6 @@ angular.module("gdbaseFtrain")
       }
       $http.post(baseURL + "server/change-password.php", data)
         .then(function (res) {
-          console.log(res.data);
           if(res.data == "changedSucessfully"){
             $scope.passResetStage = 6;
           }else{

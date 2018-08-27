@@ -31,12 +31,11 @@ angular.module("gdbaseFtrain")
                   if (location.pathname == "/client/") {
                     window.open('https://www.gdbase.be/client/','_self');
                   } else {
-                    $state.go('sims.select', {
+                    $state.go('dashboard.modules', {
                       user: $scope.username
                     });
                   }
                 } else {
-                  console.log(res.data);
                   alert("Failed to Create Account! Please try again");
                   $scope.signupSuccess = false;
                 }
@@ -45,7 +44,6 @@ angular.module("gdbaseFtrain")
               })
           } else {
             alert("Something went wrong! Please try again");
-            console.log(response.data);
             $scope.signupSuccess = false;
           }
         })

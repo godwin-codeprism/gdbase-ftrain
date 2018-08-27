@@ -9,9 +9,23 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="video elevation-3">
-                            <iframe width="100%" height="580px" ng-src="{{trustSrc ('https://www.youtube.com/embed/'+videokey+'?rel=0&autoplay=1')}}" frameborder="0" allow="autoplay; encrypted-media"
-                                allowfullscreen></iframe>
+                            <iframe width="100%" height="580px" ng-src="{{trustSrc ('https://www.youtube.com/embed/'+videokey+'?rel=0&autoplay=1')}}"
+                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 cols-lg-12 player-controls">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <button class="btn btn-primary" ng-disabled="!previousActive"  ng-click="previousVideo()"><i class="fa fa-lg ion-ios-arrow-back"></i> Vidéo précédente</button>
+                                    </td>
+                                    <td class="text-right">
+                                        <button class="btn btn-primary" ng-disabled="!nextActive"  ng-click="nextVideo()">Vidéo suivante <i class="fa fa-lg ion-ios-arrow-forward"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -19,9 +33,26 @@
     </div>
     <div class="hidde-xs hidden-sm col-md-1 col-lg-1"></div>
 </div>
-<div class="footer">
-    <p class="blink">Offre exceptionnelle « Diplôme de gestion de base GARANTI » : encore valable 3j, 20h, 34min, 15s</p>
-    <a ui-sref="dashboard.offer" class="btn btn-primary btn-sm">
-        En savoir plus
-    </a>
+<div class="footer-container">
+    <div class="askQuesContainer" ng-show="activeModule.module === 1">
+        <div class="container-fluid">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 remove-padding">
+                Il vous reste une question ? Posez la ici :
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6">
+                <input type="text" name="question" id="askQues" class="form-control" ng-model='question' ng-change="onQuestionTyped()">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                <button class="btn btn-primary btn-sm btn-block" ng-disabled="enableQuesSend" ng-click="sendQuestion()">
+                    Envoyer
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="footer" ng-show="offerTime">
+        <p class="blink">Offre exceptionnelle « Diplôme de gestion de base GARANTI » : encore valable {{offerTime}}</p>
+        <a ui-sref="dashboard.offer" class="btn btn-primary btn-sm">
+            En savoir plus
+        </a>
+    </div>
 </div>
