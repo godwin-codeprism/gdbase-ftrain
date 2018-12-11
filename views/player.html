@@ -49,9 +49,9 @@
             </div>
         </div>
     </div>
-    <div class="footer" ng-show="offerTime">
-        <p class="blink">Offre exceptionnelle « Diplôme de gestion de base GARANTI » : encore valable {{offerTime}}</p>
-        <a ui-sref="dashboard.offer" class="btn btn-primary btn-sm">
+    <div class="footer">
+        <p ng-class="{'blink': offerTime}">Offre exceptionnelle « Diplôme de gestion de base GARANTI » : {{offerTime ? 'encore valable ' + offerTime : 'Expiré'}}</p>
+        <a ui-sref="dashboard.offer" class="btn btn-primary btn-sm" ng-disabled="!offerTime">
             En savoir plus
         </a>
     </div>

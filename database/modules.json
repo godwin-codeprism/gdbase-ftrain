@@ -67,7 +67,7 @@
             ],
             "buttons": [{
                 "title": "Avoir 50 questions de plus",
-                "link": "https://gdbase.be"
+                "link": "https://www.gdbase.be/products/"
             }]
         },
         {
@@ -90,7 +90,7 @@
             ],
             "buttons": [{
                 "title": "Avoir la stratégie d’examen",
-                "link": "https://gdbase.be"
+                "link": "https://www.gdbase.be/products/"
             }]
         },
         {
@@ -104,7 +104,7 @@
             }],
             "buttons": [{
                 "title": "Aller aux simulations",
-                "link": "https://gdbase.be"
+                "link": "https://www.gdbase.be/simulation-dexamen/"
             }]
         },
         {
@@ -128,7 +128,7 @@
             ],
             "buttons": [{
                 "title": "Plus d’aide",
-                "link": "https://gdbase.be"
+                "link": "https://www.gdbase.be/products/"
             }]
         }
     ],
