@@ -67,7 +67,7 @@
             ],
             "buttons": [{
                 "title": "Avoir 50 questions de plus",
-                "link": "https://www.gdbase.be/products/"
+                "link": "https://www.gdbase.be/ftrain/assets/20%20exercices%20d%27examen%20suppl%C3%A9mentaires.pdf"
             }]
         },
         {
@@ -90,7 +90,7 @@
             ],
             "buttons": [{
                 "title": "Avoir la stratégie d’examen",
-                "link": "https://www.gdbase.be/products/"
+                "link": "https://www.gdbase.be/produits/"
             }]
         },
         {
@@ -128,7 +128,7 @@
             ],
             "buttons": [{
                 "title": "Plus d’aide",
-                "link": "https://www.gdbase.be/products/"
+                "link": "https://www.gdbase.be/produits/"
             }]
         }
     ],

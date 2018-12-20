@@ -18,10 +18,12 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <button class="btn btn-primary" ng-disabled="!previousActive"  ng-click="previousVideo()"><i class="fa fa-lg ion-ios-arrow-back"></i> Vidéo précédente</button>
+                                        <button class="btn btn-primary" ng-disabled="!previousActive" ng-click="previousVideo()"><i
+                                                class="fa fa-lg ion-ios-arrow-back"></i> Vidéo précédente</button>
                                     </td>
                                     <td class="text-right">
-                                        <button class="btn btn-primary" ng-disabled="!nextActive"  ng-click="nextVideo()">Vidéo suivante <i class="fa fa-lg ion-ios-arrow-forward"></i></button>
+                                        <button class="btn btn-primary" ng-disabled="!nextActive" ng-click="nextVideo()">Vidéo
+                                            suivante <i class="fa fa-lg ion-ios-arrow-forward"></i></button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -32,6 +34,33 @@
         </div>
     </div>
     <div class="hidde-xs hidden-sm col-md-1 col-lg-1"></div>
+</div>
+<div class="container-fluid" ng-show="activeModule.module === 1 || activeModule.module === 2" style="margin-bottom:60px;">
+    <div class="row">
+        <div class="hidde-xs hidden-sm col-md-1 col-lg-1"></div>
+        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 text-center" ng-show="activeModule.module === 2">
+            <a href="https://www.gdbase.be/produits/" target="blink">
+                <button class="btn btn-primary btn-sm">
+                    Avoir 100 exercices d'examen supplèmentaires
+                </button>
+            </a>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6" ng-show="activeModule.module === 1">
+            <a href="https://online-werk-economie-emploi.irisnet.be/fr/exams/fo7KoqSqVNPXVhMdWsd5JUYd5w__" target="blank">
+                <button class="btn btn-primary btn-sm btn-block">
+                    Inscription au center d'examen de Bruxelles
+                </button>
+            </a>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6" ng-show="activeModule.module === 1">
+            <a href="https://www.gdbase.be/ftrain/assets/form_inscrip_connaissances_gestion_de_base_tcm326-68795.doc">
+                <button class="btn btn-primary btn-sm btn-block">
+                    Inscription au center d'examen de Namur
+                </button>
+            </a>
+        </div>
+        <div class="hidde-xs hidden-sm col-md-1 col-lg-1"></div>
+    </div>
 </div>
 <div class="footer-container">
     <div class="askQuesContainer" ng-show="activeModule.module === 1">
@@ -50,7 +79,8 @@
         </div>
     </div>
     <div class="footer">
-        <p ng-class="{'blink': offerTime}">Offre exceptionnelle « Diplôme de gestion de base GARANTI » : {{offerTime ? 'encore valable ' + offerTime : 'Expiré'}}</p>
+        <p ng-class="{'blink': offerTime}">Offre exceptionnelle « Diplôme de gestion de base GARANTI » : {{offerTime ?
+            'encore valable ' + offerTime : 'Expiré'}}</p>
         <a ui-sref="dashboard.offer" class="btn btn-primary btn-sm" ng-disabled="!offerTime">
             En savoir plus
         </a>
