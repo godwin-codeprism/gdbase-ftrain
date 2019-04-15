@@ -1,4 +1,4 @@
-{
+﻿{
     "modules": [{
             "module": 1,
             "title": "Tout savoir pour avoir votre diplôme de gestion de base",
@@ -66,7 +66,7 @@
                 }
             ],
             "buttons": [{
-                "title": "Avoir 50 questions de plus",
+                "title": "Avoir 20 questions de plus",
                 "link": "https://www.gdbase.be/ftrain/assets/20%20exercices%20d%27examen%20suppl%C3%A9mentaires.pdf"
             }]
         },
@@ -133,13 +133,13 @@
         }
     ],
     "offer": {
-        "sets": ["<ul><li>Syllabus en version papier (valeur totale : 150€)</li><li>Cours en groupe à volonté (valeur : 1.000€)</li><li>Cours en vidéo à volonté (valeur : 150€)</li><li>100 exercices d’examen en vidéo (valeur : 150€)</li><li>2 heures de cours particuliers (valeur : 120€)</li><li>6 simulations d’examen (valeur : 150€)</li><li>Inscription en priorité à l’examen (valeur : 120€)</li><li>Conseils d’étudiants qui ont réussi l’examen (valeur : 160€)</li></ul><h3 class=\"text-center\">Valeur totale : 2000€</h3><hr>", "<ul><li>garantie 1 : vous ne payez que si vous réussissez votre examen</li><li>garantie 2 : vous aurez une date d’examen dans maximum 4 semaines</li><li>garantie 3 : vous aurez votre diplôme de gestion de base dans 4 mois maximum</li></ul><h2 class=\"text-primary text-center\" style=\"font-size:40px\">Réduction à 1000€</h2>"
+        "sets": ["<h2 class=\"text-center\"><strong><u>Offre PREMIUM (57% de réduction)</u></strong></h2><ul><li>Cours en groupe + syllabus (valeur : 250€)</li><li>Cours en vidéo à volonté (valeur : 300€)</li><li>6 simulations d’examen (valeur : 150€)</li></ul><h2 class=\"text-center\"><strong>Valeur totale : 700€, laissée pour 300€</strong></h2><hr>", "<h2 class=\"text-primary text-center\" style=\"font-size:40px\"><strong><u>Offre DIPLÔME GARANTI (66% de réduction)</u></strong></h2><ul><li>Cours en groupe à volonté + syllabus (valeur : 1050€)</li><li>Cours en vidéo à volonté (valeur : 300€)</li><li>6 simulations d’examen (valeur : 150€)</li><li>Garantie : si vous ratez votre examen, vous êtes remboursé(e) !</li></ul><h2 class=\"text-primary text-center\" style=\"font-size:60px\"><strong>Valeur totale : 1.500€, laissée pour 500€</strong></h2>"
         ],
         "video": {
-            "key": "ZzJ3JrUiggg",
+            "key": "Jv48LZNRCNc",
             "title": ""
         },
         "offerButtonText": "Profiter de cette offre",
-        "offerLink": "https://gdbase.be"
+        "offerLink": "https://www.gdbase.be/free-training/#!/dashboard/offre"
     }
 }
