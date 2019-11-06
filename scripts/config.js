@@ -61,17 +61,17 @@ angular.module('gdbaseFtrain', ["ngSanitize", "ui.router"])
         '$stateProvider',
         '$urlRouterProvider',
         function ($stateProvider, $urlRouterProvider) {
-            $urlRouterProvider.otherwise("/login");
+            $urlRouterProvider.otherwise("/signup");
             $stateProvider
-                .state("login", {
-                    url: "/login",
-                    templateUrl: baseURL + "views/login.html?v=1.1",
-                    controller: "loginController"
-                })
                 .state("signup", {
                     url: "/signup",
                     templateUrl: baseURL + "views/signup.html?v=1.1",
                     controller: "signupController"
+                })
+                .state("login", {
+                    url: "/login",
+                    templateUrl: baseURL + "views/login.html?v=1.1",
+                    controller: "loginController"
                 })
                 .state("dashboard", {
                     url: '/dashboard',
@@ -83,15 +83,15 @@ angular.module('gdbaseFtrain', ["ngSanitize", "ui.router"])
                     templateUrl: baseURL + "views/modules.html?v=1.1",
                     controller: "modulesController"
                 })
-                .state("dashboard.offer",{
-                    url:'/offre',
+                .state("dashboard.offer", {
+                    url: '/offre',
                     templateUrl: baseURL + "views/offer.html?v=1.1"
                 })
-                .state("dashboard.player",{
-                    url:'/:videokey',
+                .state("dashboard.player", {
+                    url: '/:videokey',
                     templateUrl: baseURL + "views/player.html?v=1.1",
                     controller: 'playerController',
-                    params:{
+                    params: {
                         videoData: null
                     }
                 })
